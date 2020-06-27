@@ -65,7 +65,7 @@ The bug is detected by the address sanitizer.
 
 ## Proof of Concept (1 point)
 
-crash-e4166adfbaba8f465b59d2ae4e5300e99595be04
+BUG_01
 
 
 ## Suggested Fix (1 point)
@@ -92,7 +92,7 @@ The bug is detected by the address sanitizer.
 
 ## Proof of Concept (1 point)
 
-crash-3169a588e3f4ef1b1dcf9159339608ece91fbc3f 
+BUG_02
 
 Note: in order to reproduce this bug, a large enough REGEX_LEN is necessary. A secondary fuzz_long.cpp file has been provided for this purpose.
 
@@ -104,7 +104,7 @@ In the stub, it is possible to limit the size of the provided regex. This soluti
 
 As a 'depth' parameter is already present in the _parse_internal() funtion, the easiest and preferred solution is to only allow recursion to reach up to a certain depth, and trigger an error in case said depth is passed.
 
-
+  
 
 # Bug 3: Stack overflow
 
@@ -120,7 +120,7 @@ The bug is detected by the address sanitizer.
 
 ## Proof of Concept (1 point)
 
-crash-1f104b58146a321169db2d32902fdf628dc54f34
+BUG_03
 
 
 ## Suggested Fix (1 point)
@@ -138,7 +138,7 @@ In the line parse.cpp:59, the value of max is multiplied by 10 and added to a di
 
 ## Proof of Concept (1 point)
 
-crash-9e813a45eb8dee409543e0947b697da45129a547 
+BUG_04
 
 
 ## Suggested Fix (1 point)
@@ -156,7 +156,7 @@ In the line parse.cpp:45, the value of min is multiplied by 10 and added to a di
 
 ## Proof of Concept (1 point)
 
-crash-019fc60acef434ad658e7a59c5feb2d8348e06e9
+BUG_05
 
 
 ## Suggested Fix (1 point)
