@@ -4,6 +4,9 @@
 
 # Bug reports
 
+In this section, a report will be provided for each bug found.  
+Each report will contain a small description of the bug, a reference to the file necessary to trigger it, and one or more suggested solution (along with a comment on the one I personally adopted, in case many are provided).
+
 # Bug 1: Heap use after free
 
 
